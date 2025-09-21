@@ -7,6 +7,7 @@ import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';
 import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';
 import FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';
+import { ArrowUp, ArrowDown } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
         <PatternTokenomics
           title="Tokenomics"
           description="Transparent and robust financial ecosystem."
-          kpiItems={[{ value: "100M", description: "Total Supply", icon: SomeIcon }, { value: "70M", description: "Market Cap", icon: SomeIcon }]}
+          kpiItems={[{ value: "100M", description: "Total Supply", icon: ArrowUp }, { value: "70M", description: "Market Cap", icon: ArrowDown }]}
         />
       </div>
       <div id="faq" data-section="faq" className="scroll-mt-24">
