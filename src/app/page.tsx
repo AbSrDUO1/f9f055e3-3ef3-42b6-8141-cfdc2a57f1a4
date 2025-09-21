@@ -56,7 +56,6 @@ export default function Home() {
           logoAlt="Richtech Logo"
           logoText="Richtech"
           columns={[{ items: [{ label: 'Privacy Policy', onClick: () => {} }, { label: 'Terms of Service', onClick: () => {} }] }]}
-          onPrivacyClick={() => {}}
         />
       </div>
     </SiteThemeProvider>
