@@ -1,1 +1,64 @@
-"use client"\nimport { SiteThemeProvider } from '@/components/sections/ThemeProvider';\nimport NavbarStyleApple from '@/components/navigation/NavbarStyleApple/NavbarStyleApple';\nimport TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';\nimport SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';\nimport HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';\nimport PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';\nimport ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';\nimport FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';\nimport { ArrowUp, ArrowDown } from 'lucide-react';\n\nexport default function Home() {\n  return (\n    <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'highlight' }}>\n      <div id="nav" data-section="nav">\n        <NavbarStyleApple\n          logoSrc="/images/logo.svg"\n          logoAlt="Richtech Logo"\n          brandName="Richtech"\n          navItems={[{ name: 'Hero', id: 'hero' }, { name: 'About', id: 'about' }, { name: 'How to Buy', id: 'how-to-buy' }, { name: 'Tokenomics', id: 'tokenomics' }, { name: 'FAQ', id: 'faq' }, { name: 'Footer', id: 'footer' }]}\n        />\n      </div>\n      <div id="hero" data-section="hero" className="scroll-mt-24">\n        <TokenBillboardHero\n          title="Welcome to Richtech"\n          subtitle="Your gateway to the next-gen solutions."\n          contractAddress="0x123456789abcdef"\n          copyButtonText="Copy Address"\n          copiedText="Copied!"\n        />\n      </div>\n      <div id="about" data-section="about" className="scroll-mt-24">\n        <SocialsAbout\n          title="About Us"\n          descriptions={["Innovative solutions for modern challenges.", "Delivering value through technology.", "Join our community!"]} \n        />\n      </div>\n      <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">\n        <HowToBuy2D variant="simple" />\n      </div>\n      <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">\n        <PatternTokenomics\n          title="Tokenomics"\n          description="Transparent and robust financial ecosystem."\n          kpiItems={[{ value: "100M", description: "Total Supply", icon: ArrowUp }, { value: "70M", description: "Market Cap", icon: ArrowDown }]}\n        />\n      </div>\n      <div id="faq" data-section="faq" className="scroll-mt-24">\n        <ImageFAQ\n          items={[{ title: "What is Richtech?", content: "A platform for innovative solutions." }, { title: "How to buy?", content: "Follow the steps in the How to Buy section." }] }\n        />\n      </div>\n      <div id="footer" data-section="footer" className="scroll-mt-24">\n        <FooterLogoEmphasis\n          logoSrc="/images/logo.svg"\n          logoAlt="Richtech Logo"\n          logoText="Richtech"\n          columns={[{ items: [{ label: 'Privacy Policy', onClick: () => {} }, { label: 'Terms of Service', onClick: () => {} }] }]}\n          onPrivacyClick={() => {}}\n        />\n      </div>\n    </SiteThemeProvider>\n  );\n}\n
+"use client";
+import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
+import NavbarStyleApple from '@/components/navigation/NavbarStyleApple/NavbarStyleApple';
+import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
+import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
+import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
+import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';
+import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';
+import FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';
+import { ArrowUp, ArrowDown } from 'lucide-react';
+
+export default function Home() {
+  return (
+    <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'highlight' }}>
+      <div id="nav" data-section="nav">
+        <NavbarStyleApple
+          logoSrc="/images/logo.svg"
+          logoAlt="Richtech Logo"
+          brandName="Richtech"
+          navItems={[{ name: 'Hero', id: 'hero' }, { name: 'About', id: 'about' }, { name: 'How to Buy', id: 'how-to-buy' }, { name: 'Tokenomics', id: 'tokenomics' }, { name: 'FAQ', id: 'faq' }, { name: 'Footer', id: 'footer' }]}
+        />
+      </div>
+      <div id="hero" data-section="hero" className="scroll-mt-24">
+        <TokenBillboardHero
+          title="Welcome to Richtech"
+          subtitle="Your gateway to the next-gen solutions."
+          contractAddress="0x123456789abcdef"
+          copyButtonText="Copy Address"
+          copiedText="Copied!"
+        />
+      </div>
+      <div id="about" data-section="about" className="scroll-mt-24">
+        <SocialsAbout
+          title="About Us"
+          descriptions={["Innovative solutions for modern challenges.", "Delivering value through technology.", "Join our community!"]} 
+        />
+      </div>
+      <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
+        <HowToBuy2D variant="simple" />
+      </div>
+      <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
+        <PatternTokenomics
+          title="Tokenomics"
+          description="Transparent and robust financial ecosystem."
+          kpiItems={[{ value: "100M", description: "Total Supply", icon: ArrowUp }, { value: "70M", description: "Market Cap", icon: ArrowDown }]}
+        />
+      </div>
+      <div id="faq" data-section="faq" className="scroll-mt-24">
+        <ImageFAQ
+          items={[{ title: "What is Richtech?", content: "A platform for innovative solutions." }, { title: "How to buy?", content: "Follow the steps in the How to Buy section." }] }
+        />
+      </div>
+      <div id="footer" data-section="footer" className="scroll-mt-24">
+        <FooterLogoEmphasis
+          logoSrc="/images/logo.svg"
+          logoAlt="Richtech Logo"
+          logoText="Richtech"
+          columns={[{ items: [{ label: 'Privacy Policy', onClick: () => {} }, { label: 'Terms of Service', onClick: () => {} }] }]}
+          onPrivacyClick={() => {}}
+        />
+      </div>
+    </SiteThemeProvider>
+  );
+}
