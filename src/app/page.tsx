@@ -7,6 +7,7 @@ import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';
 import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { LucideDollarSign, LucideBarChart } from 'lucide-react';
 
 export default function Home() {
   return (
