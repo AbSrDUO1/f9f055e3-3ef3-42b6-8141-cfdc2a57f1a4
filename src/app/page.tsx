@@ -16,10 +16,11 @@ export default function Home() {
         <NavbarBase
           navItems={[{ name: 'Links', id: 'links' }, { name: 'Get Started', id: 'get-started' }]}
           logoSrc="/images/logo.svg"
-          logoWidth={50}
-          logoHeight={50}
-          buttonText="Get Started"
-          onButtonClick={() => console.log('Clicked Get Started')}
+          logoAlt="Mvpblocks"
+          leftButtonText="Menu"
+          rightButtonText="Contact"
+          onLeftButtonClick={() => console.log('Clicked Menu')}
+          onRightButtonClick={() => console.log('Clicked Contact')}
         />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
