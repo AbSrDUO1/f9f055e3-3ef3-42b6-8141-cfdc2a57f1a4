@@ -1,6 +1,6 @@
 "use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay';
+import NavbarBase from '@/components/navigation/NavbarBase';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'highlight' }}>
       <div id="nav" data-section="nav" className="scroll-mt-24">
-        <NavbarLayoutFloatingOverlay
+        <NavbarBase
           navItems={[{ name: 'Links', id: 'links' }, { name: 'Get Started', id: 'get-started' }]}
           logoSrc="/images/logo.svg"
           logoWidth={50}
