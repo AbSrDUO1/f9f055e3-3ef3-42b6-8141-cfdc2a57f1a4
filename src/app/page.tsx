@@ -14,7 +14,6 @@ export default function Home() {
     <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'highlight' }}>
       <div id="nav" data-section="nav" className="scroll-mt-24">
         <NavbarBase
-          navItems={[{ name: 'Links', id: 'links' }, { name: 'Get Started', id: 'get-started' }]}
           logoSrc="/images/logo.svg"
           logoAlt="Mvpblocks"
           leftButtonText="Menu"
