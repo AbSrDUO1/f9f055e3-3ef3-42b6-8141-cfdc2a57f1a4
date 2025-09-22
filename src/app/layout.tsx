@@ -15,7 +15,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Richtech",
+  title: "Mvpblocks",
   description: "Plan a concise, single-page SaaS landing with base sections, optional FAQ, in-page navigation, and a cohesive brand style."
 };
 
